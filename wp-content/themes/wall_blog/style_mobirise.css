@@ -456,7 +456,7 @@ span.wpcf7-list-item {
 /*********************** Blog footer***********************************/
 #blog-footer {
 	padding-bottom: 0 !important;
-	background-color: #b5a89e !important;
+	background-color: #176dff !important;
 }
 
 #blog-footer a {
@@ -467,6 +467,7 @@ span.wpcf7-list-item {
 	font-size: 14px;
 	padding: 0 5px;
 	border-right: 1px solid #ffffffcc;
+  color: #f9f9f9;
 }
 
 .sites_ink  li:last-child a {
@@ -816,4 +817,10 @@ header a {
 }
 .the_tags li {
 	float: left;
+}
+
+@media (max-width: 767px) {
+	.sites_ink {
+		display: none;
+	}
 }

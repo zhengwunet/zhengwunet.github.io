@@ -143,7 +143,11 @@ section {
   align-content: center;
   -webkit-align-items: start;
   -ms-flex-align: start;
-  align-items: start; }
+  align-items: start;
+  background-color: #176dff;
+    color: #f9f9f9;
+    padding-top: 10px;
+     }
   .media-container-row .media-size-item {
     width: 400px; }
 
