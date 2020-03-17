@@ -475,7 +475,7 @@ span.wpcf7-list-item {
 }
 
 #blog-footer a:hover {
-	color: #767676;
+	color: yellow !important;
 }
 #blog-footer p {
 	color: #222
@@ -540,6 +540,11 @@ nav .nav-item a {
 	justify-content: center;
 	padding: 0.7rem 0 !important;
 	margin: 0rem .65rem !important;
+}
+
+
+#navbarSupportedContent a:hover {
+  color:yellow !important;
 }
 
 nav.navbar-dropdown {
@@ -823,4 +828,14 @@ header a {
 	.sites_ink {
 		display: none;
 	}
+  
+  
+}
+
+@media (max-width: 991px) {
+.navbar-nav>li>a {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    line-height: 25px;
+}
 }
