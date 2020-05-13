@@ -628,9 +628,13 @@ header a {
 	-webkit-justify-content: center;
 }
 
+.navbar {
+  height: 41px;
+}
 .cid-qX06cEvQ9w .navbar {
 	margin-bottom: 0;
 	min-height: unset;
+  height: 41px;
 }
 
 .sites_ink ul li {
