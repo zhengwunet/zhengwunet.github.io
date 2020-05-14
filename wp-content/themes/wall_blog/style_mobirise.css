@@ -628,16 +628,13 @@ header a {
 	-webkit-justify-content: center;
 }
 
-.navbar {
-  height: 41px;
-}
+
 .cid-qX06cEvQ9w .navbar {
 	margin-bottom: 0;
 	min-height: unset;
-  height: 41px;
 }
 
-.sites_ink ul li {
+.sites_ink ul li {                   
 	float: left;
 }
 
@@ -841,5 +838,11 @@ header a {
     padding-top: 10px;
     padding-bottom: 10px;
     line-height: 25px;
+}
+}
+
+@media (min-width: 992px) {
+.navbar {
+    height: 40px;
 }
 }
