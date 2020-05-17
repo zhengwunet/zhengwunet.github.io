@@ -678,14 +678,15 @@ header a {
 .catetitle_2 {
 	margin-left:1px;
 	padding:0px;
-	padding-left:21px;
+	padding-left:31px;
 	background-image:url("/wp-content/themes/wall_blog/images/icon-bk02.png");
 	background-repeat: no-repeat;
 	margin-bottom: 10px;
 }
 .catetitle_2 a {
 	color:#000000ba;
-	font-size:14px;
+	font-size:16px;
+  font-weight:bold;
 }
 
 
@@ -785,14 +786,15 @@ header a {
 .catetitle {
 	margin-left:1px;
 	padding:0px;
-	padding-left:21px;
+	padding-left:31px;
 	background-image:url("/wp-content/themes/wall_blog/images/icon-bk01.png");
 	background-repeat: no-repeat;
 	margin-bottom:10px;
 }
 .catetitle a {
 	color:#000000ba;
-	font-size:14px;
+	font-size:16px;
+  font-weight:bold;
 }
 
 
