@@ -543,9 +543,7 @@ nav .nav-item a {
 }
 
 
-#navbarSupportedContent a:hover {
-  color:yellow !important;
-}
+
 
 nav.navbar-dropdown {
 	background: none;
@@ -642,9 +640,6 @@ header a {
 	border-right: none;
 }
 
-.cid-qX06cEvQ9w .dropdown .dropdown-menu {
-	background: #176dff;
-}
 
 .cid-qX06cEvQ9w .navbar-toggleable-sm .navbar-collapse {
 	padding-right: 0;
@@ -691,7 +686,7 @@ header a {
 
 
 .cate-block {
-	border: 1px solid rgba(0,0,0,.125);
+	border: 1px solid rgba(0,0,0,.5);
 	padding: 20px;
 	border-radius: 5px;
 	margin-bottom: 15px;
@@ -779,7 +774,7 @@ header a {
 	-moz-border-radius: 10px;
 	border-radius: 10px;
 	padding: .75rem 1.25rem;
-	border : 1px solid rgba(0,0,0,.125);
+	border : 1px solid rgba(0,0,0,.5);
 	margin-bottom:12px;
 }
 
@@ -849,6 +844,11 @@ header a {
 .cid-qX06cEvQ9w .dropdown .dropdown-menu {
 	background: #176dff;
 }
+
+#navbarSupportedContent a:hover {
+  color:yellow !important;
+}
+
 }
 
 @media (min-width: 992px) {
@@ -859,28 +859,51 @@ header a {
    display:none;
  }
  .menu {
-	background-color:#80c3ff;
+	background-color:#e6f3ff;
 }
 
-.cid-qX06cEvQ9w .dropdown .dropdown-menu {
-	background: #80c3ff;
+#navbarSupportedContent a:hover {
+  color:#005fb3 !important;
+}
+
+.display-7 {
+    font-size: 1.6rem;
+    font-weight: 400;
 }
 
 .cid-qX06cEvQ9w .dropdown .dropdown-menu .dropdown-item:hover {
-  background-color: #b3dbff;
-  -moz-box-shadow: 0 0 6px 6px #b3dbff;
-  -webkit-box-shadow: 0 0 6px 5px #b3dbff;
-  box-shadow: 0 0 6px 6px #b3dbff;
+  background-color: #cce7ff;
+  -moz-box-shadow: 0 0 6px 6px #cce7ff;
+  -webkit-box-shadow: 0 0 6px 5px #cce7ff;
+  box-shadow: 0 0 6px 6px #cce7ff;
 }
 .cid-qX06cEvQ9w .nav-item a {
     display: flex;
     align-items: center;
     justify-content: center;
     padding: 0.7rem 0.5rem !important;
-    margin: 0rem .65rem !important;
+    margin: 0rem .6rem !important;
+    /*color: #0088ff;*/
 }
+
+.text-white {
+    color: #005fb3 !important;
+}
+
+.cid-qX06cEvQ9w .dropdown {
+	background-color: #e6f3ff;
+}
+
+.cid-qX06cEvQ9w .dropdown .dropdown-menu {
+    background: #99ccff;
+}
+
+.dropdown-menu {
+	background: #99ccff;
+}
+     
  a.text-white:focus {
-    color: #176dff !important;
+    color: #005fb3 !important;
  }
  
  .sites_ink a:hover {
@@ -890,4 +913,6 @@ header a {
  #blog-footer a {
    font-size: 16px;
  }
+ 
+ 
 }
