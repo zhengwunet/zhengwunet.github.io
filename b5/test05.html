@@ -291,26 +291,72 @@ function disableClick($) {
 */
 .indicators-div {
    position: absolute;
-   background-color:rgba(0,102,255,0.7);
-   top: -15px;
+   background-color:rgba(0,102,255,0);
+   bottom: -40px;
    right: 0;
    left: 0; 
    width: 100%;
-   height: 15px;
-   margin:0;
+   height: 45px;
+   padding :10px;
+   margin-top:10px;
+   margin-bottom:10px;
 }
 .carousel-indicators {
    position: absolute;
-   top:0px;
+  
+   bottom:-20px;
    left:50%;
    right:50%
-   height: 15px;
-}   
+   height: 45px;
+}  
+
 
 .carousel-indicators li {
   margin-left:5px;
   margin-right:5px;
+  width: 58px;
+  height: 43px;
+  text-indent: 0px;
+  display: inline-block;
+  cursor: pointer;
 }
+
+.carousel-indicators .active {
+  margin-left:5px;
+  margin-right:5px;
+  width: 58px;
+  height: 43px;
+  text-indent: 0px;
+  display: inline-block;
+  cursor: pointer;
+}
+@media screen and (min-width: 478px) {
+.carousel-control-next, .carousel-control-prev {
+  width:50%;
+}
+}
+@media screen and (max-width: 477px) {
+.carousel-control-next, .carousel-control-prev {
+  width:20%;
+}
+}
+/*
+.carousel-control-next-icon {
+    background-image: url(data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%2300ff' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E");
+}
+
+.carousel-control-prev-icon {
+    background-image: url(data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%2300ff' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E");
+}
+*/
+.carousel-control-prev-icon{
+  background-image:url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%2300ff' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E");
+}
+
+.carousel-control-next-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%2300ff' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E");
+}
+
 </style>
 
 
@@ -330,11 +376,41 @@ function disableClick($) {
 				-------------------------------------------------------------->
  
 				 <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-         <div style="float:right;width:12%">
-           <img src="https://big5.minghui.org/mh/article_images/2020-5-14-hongkong-513-greetings_01.jpg" style="width:40px;height:auto">
-           <img class="d-block blog-hp-fig-cat" src="https://big5.minghui.org/mh/article_images/2020-6-2-minghui-pompeo-01--ss.jpg" style="width:40px;height:auto">
-         </div>
-         <div style="float:left;width:88%">
+          <div class="indicators-div">
+            <a class="carousel-control-prev animated fadeInUp" href="#carouselExampleIndicators" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+           <ol class="carousel-indicators" >
+           
+    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active">
+    <img style=" 
+    width: 58px;
+    height: 43px;" src="https://big5.minghui.org/mh/article_images/2020-5-14-hongkong-513-greetings_01.jpg"
+											 alt="香港學員慶法輪大法日　區議員辦三退">
+    </li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="1">
+    <img style="
+    width: 58px;
+    height: 43px;" src="https://big5.minghui.org/mh/article_images/2020-6-2-minghui-pompeo-01--ss.jpg"
+											 alt="中共給全世界人民帶來風險">
+    </li>
+    
+    <li data-target="#carouselExampleIndicators" data-slide-to="2">
+     <img style="
+    width: 58px;
+    height: 43px;" src="https://big5.minghui.org/mh/article_images/2019-11-16-taiwan-paizi_01--ss.jpg"
+											 alt="慶祝法輪大法日　永遠的感恩">
+    </li>
+    
+           
+  </ol>
+        <a class="carousel-control-next animated fadeInUp" href="#carouselExampleIndicators" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>  
+  </div>
+        
           <div class="carousel-inner">
 					 <div class="carousel-item active">
           <div class="handline article clearfix">
@@ -398,9 +474,9 @@ function disableClick($) {
 						<!--image block-->
 						<div class="col-left">
 								<div class="avatar">
-									<a target="_self" href="/b5/2020/06/04/5179/index.html">
-										<img class="d-block blog-hp-fig-cat" src="https://big5.minghui.org/mh/article_images/2020-6-2-minghui-pompeo-01--ss.jpg"
-											 alt="中共給全世界人民帶來風險">
+									<a target="_self" href="/b5/2020/05/06/4415/index.html">
+										<img class="d-block blog-hp-fig-cat" src="https://big5.minghui.org/mh/article_images/2019-11-16-taiwan-paizi_01--ss.jpg"
+											 alt="慶祝法輪大法日　永遠的感恩">
 									</a>
 
 								</div>
@@ -409,23 +485,23 @@ function disableClick($) {
 
 						<div class="col-right">
 							<div class="col-right-sub">
-								<a  target="_self" href="/b5/2020/06/04/5179/index.html">
-									<h3>中共給全世界人民帶來風險</h3>
+								<a  target="_self" href="/b5/2020/05/06/4415/index.html">
+									<h3>慶祝法輪大法日　永遠的感恩</h3>
 <!--									<p class="display-4" style="padding-right: 0.5rem;">--><!--</p>-->
-									<p>美國國務卿蓬佩奧（Michael Pompeo）五月三十一日表示，中共隱瞞疫情，竊取知識產權，拒絕言論自由，壓迫人民，給 ...</p>
+									<p>二零二零年五月十三日是法輪功（也稱法輪大法）開傳二十八週年紀念日、第二十一屆「世界法輪大法日」，也是法輪...</p>
 								</a>
 							</div>
 						</div>
 					</div>
           </div>
           
-        </div>
+       
         </div>
 			</div>
 								
 
 
-
+       <div style="height:40px;float:clear">&nbsp;</div>
 
 
 				<!-------------------------------------------------------------
