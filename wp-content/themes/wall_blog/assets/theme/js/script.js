@@ -561,7 +561,7 @@
 
                 var $animatedElements = $('p, h1, h2, h3, h4, h5, a, button, small, img, li, blockquote, .mbr-author-name, em, label, input, textarea, .input-group, .iconbox, .btn-social, .mbr-figure, .mbr-map, .mbr-testimonial .card-block, .mbr-price-value, .mbr-price-figure, .dataTable, .dataTables_info').not(function() {
                     return $(this).parents().is('.navbar, .mbr-arrow, footer, .iconbox, .mbr-slider, .mbr-gallery, .mbr-testimonial .card-block, #cookiesdirective, .mbr-wowslider, .accordion, .tab-content, .engine, #scrollToTop');
-                }).addClass('hidden animated');
+                }).addClass('hidden1 animated');
 
                 function getElementOffset(element) {
                     var top = 0;
@@ -588,8 +588,8 @@
                         // check to see if this current element is within viewport
                         if ((element_bottom_position >= window_top_position) &&
                             (element_top_position <= window_bottom_position) &&
-                            ($element.hasClass('hidden'))) {
-                            $element.removeClass('hidden').addClass('fadeInUp')
+                            ($element.hasClass('hidden1'))) {
+                            $element.removeClass('hidden1').addClass('fadeInUp')
                                 .one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function() {
                                     $element.removeClass('animated fadeInUp');
                                 });
