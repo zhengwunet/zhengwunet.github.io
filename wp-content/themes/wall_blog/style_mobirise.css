@@ -417,6 +417,11 @@ span.wpcf7-list-item {
 	.blog-homepage-cat-section h4 {
 		font-size: 1.5rem;
 	}
+	#blog-article-content img {
+		max-width:80%;
+		margin-left:10%;
+		margin-right:10%;
+	}
 }
 /*********************** Blog Side Bar*********************************/
 @media (max-width: 991px) and (min-width: 768px) {
@@ -651,6 +656,7 @@ header a {
 /*--- handline ---*/
 .handline img {
 	width:230px;
+  max-height:160px;
 }
 
 .handline {
@@ -915,4 +921,31 @@ header a {
  }
  
  
+}
+.aligncenter {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+#blog-article-content h3 {
+	color:#3366ff;
+	font-size:24px;
+    font-weight: 700; 
+	text-align: center;	
+}
+#blog-article-content h4 {
+	color:#996600;
+	font-size:20px;
+    font-weight: 400; 
+	text-align: left;	
+}
+#blog-article-content .img-caption {
+	color:darkgreen;
+	font-size:10px;
+}
+#blog-article-content img {
+	max-width: 90%;
+	height:auto;
+	margin-left: auto;
+    margin-right: auto;
 }
